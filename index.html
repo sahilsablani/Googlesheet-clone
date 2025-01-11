@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Clone</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Google Sheets Clone</h1>
+  <div class="toolbar">
+    <button id="bold-btn">Bold</button>
+    <button id="italic-btn">Italic</button>
+    <select id="font-size">
+      <option value="12">12px</option>
+      <option value="14">14px</option>
+      <option value="16">16px</option>
+      <option value="18">18px</option>
+    </select>
+    <input type="color" id="font-color" title="Font Color">
+    <button id="add-row-btn">Add Row</button>
+    <button id="add-col-btn">Add Column</button>
+    <button id="trim-btn">Trim</button>
+    <button id="upper-btn">Uppercase</button>
+    <button id="lower-btn">Lowercase</button>
+    <button id="remove-duplicates-btn">Remove Duplicates</button>
+    <button id="find-replace-btn">Find & Replace</button>
+  </div>
+  <input type="text" id="formula-bar" placeholder="Enter formula (e.g., =SUM(A1:A5))">
+  <button id="calculate-btn">Calculate</button>
+
+  <div class="sheet-container">
+    <table id="spreadsheet">
+      <thead>
+        <tr id="column-headers"></tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>
