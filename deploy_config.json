@@ -1,0 +1,11 @@
+{
+  "projectName": "google-sheets-mimic",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "repository": "https://github.com/your-username/google-sheets-mimic",
+  "deployment": {
+    "type": "static",
+    "platform": "GitHub Pages",
+    "entryPoint": "index.html"
+  }
+}
